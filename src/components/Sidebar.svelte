@@ -51,16 +51,28 @@
 
 <aside
   id="separator-sidebar"
-  class="fixed top-20 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+  class=""
   aria-label="Sidebar"
 >
-  <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+<div class=" px-3 py-3 lg:px-5 lg:pl-5 pt-6 flex items-center justify-start rtl:justify-end gap-4">
+    <span
+      class="flex flex-shrink-0 justify-center items-center w-10 h-10 text-lg font-bold uppercase text-gray-800 bg-white rounded-full"
+    >
+      C
+    </span>
+    <span
+      class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-white"
+    >
+      Clousor
+    </span>
+  </div>
+  <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 ">
     <div class="flex flex-col space-y-1 font-medium">
       <!-- {mainRoutes.map(({ name, href, icon }) => ( -->
       {#each mainRoutes as { name, href, icon }}
         <a
           {href}
-          class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+          class="flex items-center p-2 text-white rounded-lg hover:bg-white/25  group"
         >
           <SvgIcon
             name={icon}
@@ -71,12 +83,12 @@
       {/each}
     </div>
     <div
-      class="pt-4 mt-4 space-y-1 font-medium border-t border-gray-200 dark:border-gray-700 flex flex-col"
+      class="pt-4 mt-4 space-y-1 font-medium border-t border-white/25  flex flex-col"
     >
       {#each otherRoutes as { name, href, icon }}
         <a
           {href}
-          class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+          class="flex items-center p-2 text-white rounded-lg hover:bg-white/25 group"
         >
           <SvgIcon
             name={icon}

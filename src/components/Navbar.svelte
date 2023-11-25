@@ -1,23 +1,21 @@
 <script lang="ts">
+  import SvgIcon from "$src/components/SvgIcon.svelte";
+  const profileMenu = [
+    {
+      name: "Dashboard",
+      href: "/",
+      icon: "dashboard",
+    },
+  ];
 </script>
 
-<nav
-  class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700"
->
+<nav class=" bg-white shadow">
   <div class="px-3 py-3 lg:px-5 lg:pl-3">
-    <div class="flex items-center justify-between">
-      <div class="pl-2 flex items-center justify-start rtl:justify-end gap-2">
-        <span
-          class="flex flex-shrink-0 justify-center items-center w-10 h-10 text-lg font-bold uppercase text-gray-800 bg-white rounded-full"
-        >
-          C
-        </span>
-        <span
-          class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white"
-        >
-          Clousor
-        </span>
-      </div>
+    <div class="flex items-center justify-end">
+      <SvgIcon
+        name="notification"
+        class="flex-shrink-0 w-6 h-6 transition duration-75"
+      />
     </div>
   </div>
 </nav>
