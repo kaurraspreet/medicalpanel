@@ -20,7 +20,7 @@
   export let label: string | undefined = undefined;
   export let useNativeErrorMessage: boolean = false;
   export let errorClass = "";
-  export let hideIcon: boolean = false;
+  // export let hideIcon: boolean = false;
   export let reactiveValidityKey: any = ""; // anytime this value changes it will (enforce) validity re-check
   /** You can use native HTML validations instead. E.g. HTML attributes like required, min, max, maxLength, pattern, minLength etc. But if native validations aren't enough then use this */
   export let validator: any = undefined;
